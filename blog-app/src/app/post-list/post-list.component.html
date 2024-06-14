@@ -1,1 +1,6 @@
-<p>post-list works!</p>
+<div *ngFor="let post of posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <button (click)="onRemovePost(post.id)">Remove</button>
+  </div>
+  
